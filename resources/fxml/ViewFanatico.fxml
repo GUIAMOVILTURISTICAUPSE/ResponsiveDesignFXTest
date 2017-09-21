@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.SpinnerValueFactory.IntegerSpinnerValueFactory?>
+
+<VBox stylesheets="/Estilo.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerFanatico">
+	<Label alignment="CENTER" prefHeight="17.0" prefWidth="273.0" text="FANATICO" />
+	<TextField fx:id="txtId"/>
+	<HBox>
+		<Label prefHeight="17.0" prefWidth="124.0" styleClass="label" text="Nombre " />
+		<TextField fx:id="txtNombre" styleClass="textField" />
+	</HBox>
+	
+	<HBox>
+		<Label prefHeight="17.0" prefWidth="132.0" styleClass="label" text="Fecha de Nacimiento " />
+		<DatePicker fx:id="dtpFecha" />
+	</HBox>
+	
+	<HBox>
+		<Label prefHeight="17.0" prefWidth="124.0" styleClass="label" text="Genero " />
+		<ComboBox fx:id="cmbGenero" prefHeight="25.0" prefWidth="150.0" styleClass="comboBox" />
+	</HBox>
+	
+	<HBox>
+		<Label prefHeight="17.0" prefWidth="126.0" text="Email" />
+		<TextField styleClass="textField" fx:id="txtEmail" />
+	</HBox>
+	
+	<HBox>
+		<Label styleClass="label" text="Estado"/>
+		<ComboBox styleClass="comboBox" fx:id="cmbEstado"/>
+	</HBox>
+	
+	<HBox>
+		<Label styleClass="label" text="Equipo"/>
+		<ComboBox styleClass="comboBox" fx:id="cmbEquipo"/>
+	</HBox>
+	
+	<HBox>
+		<Label styleClass="label" text="Socio"/>
+		<CheckBox fx:id="chkSocio"/>
+	</HBox>
+	
+	<HBox >
+		<Label styleClass="label" text="Antecedentes"/>
+		<CheckBox fx:id="chkAntecedentes"/>
+	</HBox>
+	
+	<HBox >
+		<Label styleClass="label" text="Años de antiguedad"/>
+		<Spinner  fx:id="spnAntiguedad">
+			<valueFactory>
+				<SpinnerValueFactory.IntegerSpinnerValueFactory max="100" min="1"/>
+			</valueFactory>
+		</Spinner>
+	</HBox>
+	
+	<HBox>
+		<Button styleClass="boton" text="Limpiar" fx:id="btnLimpiar"/>
+		<Button fx:id="btnGuardar" styleClass="boton" text="Guardar"/>
+		<Button styleClass="boton" text="Cancelar" fx:id="btnCancelar"/>
+	</HBox>
+</VBox>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Button?>
+
+<VBox fx:id="vbox" xmlns:fx="http://javafx.com/fxml/1" stylesheets="/Estilo.css" fx:controller="controllers.ControllerRedSocial">
+	<Label text="RED SOCIAL"/>
+	<HBox fx:id="hbox">
+		<Label text="Nombre: "/>
+		<TextField fx:id="txtNombre"/>
+		<Button text="Crear Red Social" fx:id="btnCrearRed"/>
+	</HBox>
+	<HBox fx:id="hbox">
+		<Label text="Miembros"/>
+		<Button text="Agregar" fx:id="btnAgregar"/>
+		<Button text="Modificar" fx:id="btnModificar"/>
+		<Button text="Borrar" fx:id="btnBorrar"/>
+	</HBox>
+		
+		<ListView fx:id="lstMiembros"/>
+		<Label text="Busqueda"/>
+		
+		<HBox fx:id="hbox">
+			<Label text="Criterio"/>
+			<ComboBox />
+			<Button text="Buscar"/>
+		</HBox>
+		
+		<Label text="Resultados Busqueda"/>
+		<ListView />
+		<Label text="Accion"/>
+		<HBox fx:id="hbox">
+			<Label text="Acciones a Ejecutar"/>
+			<ComboBox />
+			<Button text="Previsualizar"/>
+		</HBox>
+		<Label text="Preview Resultado"/>
+		<ListView />
+		<Button text="Ejecutar Accion"/>
+	
+</VBox>
+
