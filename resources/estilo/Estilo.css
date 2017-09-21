@@ -10,6 +10,22 @@
     -fx-opacity: 1.5;
 }
 
+.label:extreme-small-device{
+	-fx-text-fill: black;
+}
+
+.label:small-device {
+	-fx-text-fill: burlywood ;
+}
+
+.label:medium-device{
+	-fx-text-fill: darkcyan ;
+}
+
+.label:large-device{
+	-fx-text-fill: fuchsia ;
+}
+
 .botonSalir{
 	-fx-font-family: "Franklin Gothic Demi";
 	-fx-text-fill: red ;
